@@ -1,0 +1,6 @@
+{
+  "name": "HNDE Labuduwa Alumni Association",
+  "description": "Reconnect, network and build a brighter tomorrow with the HNDE Labuduwa Alumni Association.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

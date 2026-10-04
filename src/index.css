@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0c0507;
+    color: #f4efe8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Gold Gradient & Text Foil */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #fce5a3 0%, #dfb15b 50%, #9a7428 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, rgba(223, 177, 91, 0.7), rgba(74, 14, 23, 0.4), rgba(223, 177, 91, 0.8)) 1;
+}
+
+/* Glassmorphism Burgundy */
+.burgundy-glass {
+  background: rgba(35, 7, 13, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(223, 177, 91, 0.18);
+}
+
+.burgundy-card {
+  background: radial-gradient(120% 120% at 50% 0%, rgba(74, 14, 23, 0.5) 0%, rgba(21, 3, 6, 0.85) 100%);
+  border: 1px solid rgba(223, 177, 91, 0.15);
+}
+
+/* Ticket Perforation Styling */
+.ticket-perforation-v {
+  background-image: radial-gradient(circle at 0 50%, transparent 12px, rgba(35, 7, 13, 0.85) 13px);
+}
+
+.dashed-divider {
+  background-image: linear-gradient(to bottom, rgba(223, 177, 91, 0.35) 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 2px 12px;
+  background-repeat: repeat-y;
+}
+
+.dashed-divider-h {
+  background-image: linear-gradient(to right, rgba(223, 177, 91, 0.35) 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 12px 2px;
+  background-repeat: repeat-x;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0507;
+}
+::-webkit-scrollbar-thumb {
+  background: #350910;
+  border-radius: 4px;
+  border: 1px solid rgba(223, 177, 91, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #55121c;
+}
